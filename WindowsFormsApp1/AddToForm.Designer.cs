@@ -34,14 +34,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.UPCIn = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.DescIn = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.QuanIN = new System.Windows.Forms.TextBox();
+            this.PriceIn = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -108,14 +108,14 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "List Price:";
             // 
-            // textBox1
+            // UPCIn
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(187, 157);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(547, 32);
-            this.textBox1.TabIndex = 7;
+            this.UPCIn.BackColor = System.Drawing.SystemColors.Control;
+            this.UPCIn.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UPCIn.Location = new System.Drawing.Point(187, 157);
+            this.UPCIn.Name = "UPCIn";
+            this.UPCIn.Size = new System.Drawing.Size(547, 32);
+            this.UPCIn.TabIndex = 7;
             // 
             // panel1
             // 
@@ -141,14 +141,14 @@
             this.panel3.Size = new System.Drawing.Size(672, 3);
             this.panel3.TabIndex = 9;
             // 
-            // textBox2
+            // DescIn
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(258, 232);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(476, 32);
-            this.textBox2.TabIndex = 10;
+            this.DescIn.BackColor = System.Drawing.SystemColors.Control;
+            this.DescIn.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DescIn.Location = new System.Drawing.Point(258, 232);
+            this.DescIn.Name = "DescIn";
+            this.DescIn.Size = new System.Drawing.Size(476, 32);
+            this.DescIn.TabIndex = 10;
             // 
             // panel4
             // 
@@ -158,23 +158,23 @@
             this.panel4.Size = new System.Drawing.Size(672, 3);
             this.panel4.TabIndex = 9;
             // 
-            // textBox3
+            // QuanIN
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(191, 313);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(543, 32);
-            this.textBox3.TabIndex = 11;
+            this.QuanIN.BackColor = System.Drawing.SystemColors.Control;
+            this.QuanIN.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QuanIN.Location = new System.Drawing.Point(191, 313);
+            this.QuanIN.Name = "QuanIN";
+            this.QuanIN.Size = new System.Drawing.Size(543, 32);
+            this.QuanIN.TabIndex = 11;
             // 
-            // textBox4
+            // PriceIn
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(184, 386);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(550, 32);
-            this.textBox4.TabIndex = 12;
+            this.PriceIn.BackColor = System.Drawing.SystemColors.Control;
+            this.PriceIn.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PriceIn.Location = new System.Drawing.Point(184, 386);
+            this.PriceIn.Name = "PriceIn";
+            this.PriceIn.Size = new System.Drawing.Size(550, 32);
+            this.PriceIn.TabIndex = 12;
             // 
             // button1
             // 
@@ -218,14 +218,14 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.PriceIn);
+            this.Controls.Add(this.QuanIN);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.DescIn);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.UPCIn);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -247,14 +247,14 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox UPCIn;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox DescIn;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox QuanIN;
+        private System.Windows.Forms.TextBox PriceIn;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;

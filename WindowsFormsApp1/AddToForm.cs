@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -35,7 +36,41 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //add data to the database
+            var con = new SqlConnection("data source=PC22\\SQLEXPRESS;initial catalog=LoginPage;integrated security=True;Encrypt=False");
+            con.Open();
+            SqlCommand AddInto = new SqlCommand("AddNew", con);
+            AddInto.CommandType = CommandType.StoredProcedure;
+            AddInto.Parameters.AddWithValue("@UPC", SqlDbType.Char).Value = UPCIn.Text;
+            AddInto.Parameters.AddWithValue("@Description", SqlDbType.Char).Value = UPCIn.Text;
+            AddInto.Parameters.AddWithValue("@Quantity", SqlDbType.Char).Value = UPCIn.Text;
+            AddInto.Parameters.AddWithValue("@Listprice", SqlDbType.Char).Value = UPCIn.Text;
+
+            /*create procedure dbo.AddNew
+	            @UPC char(20),
+	            @Description char(50),
+	            @Quantity int,
+	            @Listprice smallmoney
+            as 
+                declare @Retailprice smallmoney
+                if(Quantity < 50,  )
+	            insert into ProductsPrice (UPCNum, ItemDescription, Quantity, listPrice, RetailPrice)
+	            values(@UPC, @Description, @Quantity, @Listprice, @Retailprice)
+	        return 
+            
+             create table Productsprice 
+            (
+                UOCNum char(10) primary key not null, 
+                ItemDescription char(30)
+                Quantity int, 
+                listPrice smallmoney,
+                Retailprice smallmoney
+            )
+             
+             
+             
+             
+             */
+
         }
     }
 }
